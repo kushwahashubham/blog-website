@@ -1,2 +1,2 @@
 # blog-website
-It is just frontend of a bloging website.
+It is an beautiful and functional frontend of a bloging website.
