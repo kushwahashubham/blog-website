@@ -12,7 +12,61 @@
         <div class="header">
              <!-- Insert code for Sign Up, Sign In button here. 
                Add code for "ScriBBler" heading and the sub-heading -->
+            <input id="signUpButtonClick" class="topButtons" type="button" onclick="openSignUpButton()" value="Sign Up">
+                <input id="loginButtonClick" class="topButtons" type="button" onclick="openSignIn()" value="Sign In">
+                <a id="pageTitle" class="logo-title" href="..\index.html">ScriBBler</a>
+                <p class="middleText">Explore, Imagine, Create</p>
         </div>
+    <div id="signInModal" class="modal">
+                    <form class="modal-content">
+                        <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+                        <div class="container">
+                        <h1>Welcome Back</h1>
+                        <hr>
+                        <label for="Username" class="label">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="Username" required>
+        
+                        <label for="psw" class="label">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <div class="clearfix" class="label">
+                            
+                            <button type="submit" class="signinbtn">Sign In</button>
+                        </div>
+                    </div>
+                    <div id="signUpPrompt" class="signUpForm">Not a member?
+                        <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+                    </div>
+                </form>
+            </div>
+        
+            <div id="signUpModal" class="modal">
+                <div class="modal-content-sigup">
+                    <span onclick="onCloseModalClicked()" class="close" title="Close Modal">&times;</span>
+                    <form class="modal-content-sigUp">
+                        <div class="container-signUp">
+        
+                            <h1>Get Started</h1>
+                            <hr>
+                            <label for="Fullname" class="label">Full Name</label>
+                            <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                            <label for="Username" class="label">Username</label>
+                            <input type="text" placeholder="Enter Username" name="Username" required>
+                            <label for="psw" class="label">Password</label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label for="psw-repeat" class="label">Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                            <div class="clearfix">
+                                    <button type="submit" class="signupbtn">Sign Up</button>
+                                <button type="button" class="cancelbtn">Clear</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
     <div class="blogContent">
         <div id="blogTitle" class="blogTite">
